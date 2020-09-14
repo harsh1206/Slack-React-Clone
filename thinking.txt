@@ -1,0 +1,17 @@
+1. Wireframing - rough sketch what are we going to build
+2. functionality -
+   *sign in
+   *sign up
+   *create a channel
+   *send message in a channel
+   * join a channel
+   * search a channel
+
+ 3. data required
+    * users
+    * channel
+    * messages
+ 4. UI components
+    * side bar(list of channel, list of message)
+    * main container(channel-desc(header),list of message,send message)
+    *sign in & sign up form
