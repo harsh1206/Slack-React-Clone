@@ -1,25 +1,27 @@
+import React, { Component } from "react";
+import { Switch, Route } from "react-router-dom";
+import { SignIn, Slack } from "./";
 
-import { SignIn } from "./";
+function Home() {
+  return <div>Home</div>;
+}
 
-import React, { Component } from 'react';
-import {Switch,Route} from 'react-router-dom';
+function Some() {
+  return <div>Some</div>;
+}
 
 class App extends Component {
-    
-   state ={
-     counter: 1,
-   }
-   
   render() {
     return (
       <div>
-         <Switch>
-            <Route exact path="/" component={SignIn} />           
-         </Switch>
+        <Switch>
+          <Route exact path="/" component={SignIn} />
+          <Route exact path="/home" component={Home} />
+          <Route exact path="/slack" component={Slack} />
+        </Switch>
       </div>
     );
   }
 }
 
 export default App;
-
