@@ -3,9 +3,10 @@ import { Sidebar, MainContainer } from "./";
 
 class Slack extends Component {
   render() {
+       
     return (
       <div id="slack">
-        <Sidebar />
+        <Sidebar/>
         <MainContainer />
       </div>
     );
